@@ -1,1 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matthew Muju - CV</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' }
+  </script>
+
+  <!-- AOS (Animate on Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800 transition-colors duration-500 dark:bg-gray-900 dark:text-gray-200">
+
+  <!-- Dark Mode Toggle -->
+  <div class="fixed top-4 right-4 flex gap-2">
+    <button id="darkToggle" class="px-3 py-2 rounded-full bg-gray-200 dark:bg-gray-700 shadow hover:scale-110 transition-transform">
+      🌙
+    </button>
+  </div>
+
+  <div class="max-w-4xl mx-auto bg-white dark:bg-gray-800 shadow-lg rounded-xl p-8 my-10 transition-colors duration-500">
+
+    <!-- Header -->
+    <div class="text-center mb-6" data-aos="fade-down">
+      <!-- Profile Photo -->
+      <img src="cv/profile.jpg" alt="Profile Photo" 
+           class="w-32 h-32 rounded-full mx-auto shadow-lg border-4 border-white dark:border-gray-700 mb-4 cursor-pointer"
+           id="profilePhoto">
+
+      <h1 class="text-3xl font-bold text-gray-900 dark:text-white">Matthew Muju</h1>
+      <p class="text-gray-600 dark:text-gray-300">Tomohon, Indonesia</p>
+      <p class="text-gray-600 dark:text-gray-300">📞 0858-2510-0962 / 0878-8252-8062</p>
+      <p class="text-gray-600 dark:text-gray-300">
+        📧 <a href="mailto:mujumatthew@gmail.com" class="text-blue-600 hover:underline hover:text-blue-400 transition-colors">mujumatthew@gmail.com</a> |
+        🌐 <a href="https://github.com/Matthew-Muju" class="text-blue-600 hover:underline hover:text-blue-400 transition-colors">github.com/Matthew-Muju</a>
+      </p>
+
+      <!-- Download Buttons -->
+      <div class="mt-4 flex justify-center gap-3">
+        <a href="cv/Matthew_Muju_CV.pdf" target="_blank" class="px-4 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition">Download PDF</a>
+        <a href="cv/Matthew_Muju_CV.docx" target="_blank" class="px-4 py-2 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition">Download DOCX</a>
+      </div>
+    </div>
+
+    <!-- Summary -->
+    <section class="mb-6" data-aos="fade-up">
+      <h2 class="text-xl font-semibold border-b pb-2 mb-2">Professional Summary</h2>
+      <p>
+        Computer Science graduate with expertise in web and mobile development, administration, and technical support.
+        Skilled in Python, JavaScript, PHP, C++, and C#. Strong problem-solving and teamwork abilities with proven
+        experience in hospital operations and IT systems.
+      </p>
+    </section>
+
+    <!-- Experience -->
+    <section class="mb-6" data-aos="fade-up">
+      <h2 class="text-xl font-semibold border-b pb-2 mb-2">Work Experience</h2>
+
+      <div class="mb-4 hover:bg-gray-50 dark:hover:bg-gray-700 p-3 rounded-lg transition">
+        <h3 class="font-bold">Casemix Staff – Siloam Hospital Paal Dua, Manado</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Jun 2025 – Present</p>
+        <ul class="list-disc ml-6">
+          <li>Verified completeness of medical records (physical & digital).</li>
+          <li>Organized documentation to maintain accurate patient folders.</li>
+          <li>Collaborated with medical and admin teams for compliance.</li>
+        </ul>
+      </div>
+
+      <div class="mb-4 hover:bg-gray-50 dark:hover:bg-gray-700 p-3 rounded-lg transition">
+        <h3 class="font-bold">Front Office Assistant – Siloam Hospital Paal Dua, Manado</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Mar 2025 – May 2025</p>
+        <ul class="list-disc ml-6">
+          <li>Handled patient registration and appointment scheduling.</li>
+          <li>Educated patients on hospital policies, improving satisfaction.</li>
+          <li>Processed payments and managed front-office documentation.</li>
+        </ul>
+      </div>
+
+      <div class="hover:bg-gray-50 dark:hover:bg-gray-700 p-3 rounded-lg transition">
+        <h3 class="font-bold">Staff ALC – PT Lotte Shopping Indonesia</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Sep 2020 – May 2024</p>
+        <ul class="list-disc ml-6">
+          <li>Led inventory and transaction verification, reducing discrepancies.</li>
+          <li>Provided IT and network support for smooth operations.</li>
+          <li>Streamlined data management processes for efficiency.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="mb-6" data-aos="fade-up">
+      <h2 class="text-xl font-semibold border-b pb-2 mb-2">Education</h2>
+      <p><strong>Universitas Klabat – Airmadidi</strong><br />Bachelor of Technology (Informatics), Magna Cum Laude (2023)<br />Focus: programming, web development, database management, networking.</p>
+    </section>
+
+    <!-- Projects -->
+    <section class="mb-6" data-aos="fade-up">
+      <h2 class="text-xl font-semibold border-b pb-2 mb-2">Projects</h2>
+      <div class="grid gap-4 sm:grid-cols-2">
+        <a href="#" target="_blank" class="block p-4 border rounded-lg shadow hover:shadow-lg hover:-translate-y-1 transition bg-gray-50 dark:bg-gray-700">
+          <h3 class="font-semibold">JASKUB (Jasa Kuli Bangunan)</h3>
+          <p class="text-sm">Android app connecting clients with construction workers.</p>
+          <p class="text-xs text-gray-600 dark:text-gray-400">Tech: React Native, JS, Firebase, Google Maps API</p>
+        </a>
+        <a href="#" target="_blank" class="block p-4 border rounded-lg shadow hover:shadow-lg hover:-translate-y-1 transition bg-gray-50 dark:bg-gray-700">
+          <h3 class="font-semibold">Android Attendance App</h3>
+          <p class="text-sm">Mobile app for student attendance tracking.</p>
+          <p class="text-xs text-gray-600 dark:text-gray-400">Tech: Java, Android Studio, Firebase</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="mb-6" data-aos="fade-up">
+      <h2 class="text-xl font-semibold border-b pb-2 mb-2">Certifications</h2>
+      <p>Adobe Certified Professional (ACP) – Universitas Klabat (2023–2026)</p>
+    </section>
+
+    <!-- Skills -->
+    <section class="mb-6" data-aos="fade-up">
+      <h2 class="text-xl font-semibold border-b pb-2 mb-2">Skills</h2>
+      <div class="flex flex-wrap gap-2">
+        <span class="px-3 py-1 bg-blue-100 dark:bg-blue-800 text-blue-700 dark:text-blue-200 rounded-full text-sm hover:scale-105 transition">Python</span>
+        <span class="px-3 py-1 bg-blue-100 dark:bg-blue-800 text-blue-700 dark:text-blue-200 rounded-full text-sm hover:scale-105 transition">JavaScript</span>
+        <span class="px-3 py-1 bg-blue-100 dark:bg-blue-800 text-blue-700 dark:text-blue-200 rounded-full text-sm hover:scale-105 transition">PHP</span>
+        <span class="px-3 py-1 bg-blue-100 dark:bg-blue-800 text-blue-700 dark:text-blue-200 rounded-full text-sm hover:scale-105 transition">C++</span>
+        <span class="px-3 py-1 bg-blue-100 dark:bg-blue-800 text-blue-700 dark:text-blue-200 rounded-full text-sm hover:scale-105 transition">C#</span>
+        <span class="px-3 py-1 bg-blue-100 dark:bg-blue-800 text-blue-700 dark:text-blue-200 rounded-full text-sm hover:scale-105 transition">React</span>
+        <span class="px-3 py-1 bg-blue-100 dark:bg-blue-800 text-blue-700 dark:text-blue-200 rounded-full text-sm hover:scale-105 transition">MySQL</span>
+        <span class="px-3 py-1 bg-blue-100 dark:bg-blue-800 text-blue-700 dark:text-blue-200 rounded-full text-sm hover:scale-105 transition">Git</span>
+      </div>
+    </section>
+
+    <!-- Languages -->
+    <section data-aos="fade-up">
+      <h2 class="text-xl font-semibold border-b pb-2 mb-2">Languages</h2>
+      <p>English (Fluent), Indonesian (Native)</p>
+    </section>
+
+  </div>
+
+  <!-- Photo Zoom Modal -->
+  <div id="photoModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden z-50">
+    <div class="relative">
+      <img src="cv/profile.jpg" alt="Profile Large" class="max-w-full max-h-[90vh] rounded-lg shadow-lg">
+      <!-- Close button -->
+      <button id="closeModal" 
+              class="absolute top-2 right-2 bg-white text-black rounded-full px-2 py-1 text-sm shadow hover:bg-gray-200">
+        ✕
+      </button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    // Dark Mode Toggle with localStorage
+    const btn = document.getElementById('darkToggle');
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme === 'dark') document.documentElement.classList.add('dark');
+    btn.textContent = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
+    btn.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      const theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+      localStorage.setItem('theme', theme);
+      btn.textContent = theme === 'dark' ? '☀️' : '🌙';
+    });
+
+    // Init AOS
+    AOS.init({ duration: 800, once: true });
+
+    // Profile photo zoom
+    const profilePhoto = document.getElementById('profilePhoto');
+    const photoModal = document.getElementById('photoModal');
+    const closeModal = document.getElementById('closeModal');
+
+    profilePhoto.addEventListener('click', () => {
+      photoModal.classList.remove('hidden');
+    });
+
+    closeModal.addEventListener('click', () => {
+      photoModal.classList.add('hidden');
+    });
+
+    // Close modal when clicking outside
+    photoModal.addEventListener('click', (e) => {
+      if (e.target === photoModal) {
+        photoModal.classList.add('hidden');
+      }
+    });
+  </script>
+</body>
+</html>
 
